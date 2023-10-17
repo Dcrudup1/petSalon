@@ -1,0 +1,35 @@
+let salon = {
+    name:"The fashion pet",
+    address:{
+        street:"palm",
+        number:"262",
+        zip:"22117"
+    },
+    hours:{
+        open:"9:00am",
+        close:"8:00 pm"
+    },
+    pets:[
+        {
+
+            name:"scooby",
+            age: 70
+        },
+        {
+            name:"scrappy",
+            age:60
+        }
+    ]
+}
+
+function displayInfo(){
+    document.getElementById("pets").innerHTML=`welcome to ${salon.name}..... close at ${salon.hours.close}`;
+}
+displayInfo();
+
+function displayPetNames(){
+    console.log(salon.pets[0].name);
+    console.log(salon.pets[1].name);
+
+}
+displayPetNames();
